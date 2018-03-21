@@ -10,18 +10,18 @@ public class GenericTypeDemo {
         List<Object> list3 = new ArrayList<>();
         List<Number> list4 = new ArrayList<>();
 
-        doWork(list1); //String不是继承number的，所以这里会报错
-        doWork(list2);
-        doWork(list3);
-        doWork(list4);
-
-        doWork2(list1);
-        doWork2(list2);
-        doWork2(list3);
-        doWork2(list4);
+//        doWork(list1); //String不是继承number的，所以这里会报错
+//        doWork(list2);
+//        doWork(list3);
+//        doWork(list4);
+//
+//        doWork2(list1);
+//        doWork2(list2);
+//        doWork2(list3);
+//        doWork2(list4);
 
     }
-    
+
     //此时的泛型，必须是number类型或者number类的子类  上限
     private static void doWork(List<? extends Number> list){
 
