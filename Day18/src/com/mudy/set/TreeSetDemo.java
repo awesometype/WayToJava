@@ -45,6 +45,16 @@ public class TreeSetDemo {
  * 注意:必须保证TreeSet集合中的元素对象是相同的数据类型，否则报错   就可以使用范型来进行约束,保证了数据的安全
  */
 
-/**
+/**TreeSet的排序规则
+ *
+ * 自然排序:从小到大
+ * 要求TreeSet集合中的元素得实现java.lang.Comparable接口
+ *
+ *
+ * java.lang.Comparable接口
+ *  覆盖compareTo(Object o)方法，在该方法中编写比较规则
+ *
+ *
+ * 定制排序:
  *
  */
