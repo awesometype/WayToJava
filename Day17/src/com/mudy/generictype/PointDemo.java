@@ -20,4 +20,9 @@ public class PointDemo
         System.out.println(p2.getX());
         System.out.println(p2.getY());
     }
+
+    //这里的返回的类型，应该是由参数来决定的
+    public static <T>T doWork(T val){
+        return val;
+    }
 }
