@@ -5,6 +5,7 @@ import java.util.TreeSet;
 
 /**
  * Created by mudy on 18/3/22.
+ * TreeSet的自然排序
  */
 
 class Person implements Comparable<Person>{
