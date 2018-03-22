@@ -56,3 +56,9 @@ public class HashSetDemo {
  * 存储在哈希表中的对象，都应该覆盖equals方法和hashCode方法，并且保证equals相等的时候，hashCode也应该相等。
  */
 
+/**
+ * 底层是map
+ * 相同算法的set底层用的是相同算法的map
+ * 把set的集合对象作为map的key，再使用一个Object常量作为value
+ *
+ */
