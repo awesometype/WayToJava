@@ -7,6 +7,8 @@ import java.util.TreeSet;
 /**
  * Created by mudy on 18/3/22.
  * TreeSet的定制排序
+ *
+ * 使用的是compare方法
  */
 
 class Person2{
