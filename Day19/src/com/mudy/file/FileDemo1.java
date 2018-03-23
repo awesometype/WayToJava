@@ -6,7 +6,7 @@ import java.io.File;
  * Created by mudy on 18/3/23.
  *
  */
-public class FileDemo {
+public class FileDemo1 {
     public static void main(String[] args) {
 
         /** 字段摘要

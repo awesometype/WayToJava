@@ -6,7 +6,7 @@ import java.io.File;
  * Created by mudy on 18/3/23.
  * 文件操作
  */
-public class OperateFile {
+public class FileDemo3 {
     public static void main(String[] args) {
         File dir = new File("/Users/mudy/IntelliJIDEAProjects/WayToJava");
         listAllFile(dir);
