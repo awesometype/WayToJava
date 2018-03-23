@@ -32,3 +32,17 @@ public class Main {
  * 把Map对象转换为JavaBean对象，把JavaBean对象转换为Map对象
  *
  */
+
+
+/** 集合操作的工具类
+ * 1):Arrays类:
+ * 2):Collections类:
+ *
+ *
+ * Array类:
+ * 在Collection接口中有一个方法叫toArray把集合转换为Object数组
+ * 把集合转换为数组:Object[] arr = 集合对象.toArray();
+ * 数组也可以转换为集合(List集合)
+ *
+ *
+ */
