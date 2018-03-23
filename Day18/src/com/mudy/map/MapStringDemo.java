@@ -13,7 +13,7 @@ public class MapStringDemo {
     public static void main(String[] args) {
         String str = "abcdefgabcdefgabcdefgabcdefgggg";
         char[] arr = str.toCharArray();
-        Map<Character,Integer> map = new HashMap<>();
+        Map<Character,Integer> map = new HashMap<>();//可以使用LinkedHashMap或者TreeMap来规定顺序
         for (char c:arr) {
             if (map.containsKey(c)){
                 int v = (int)map.get(c) + 1;
