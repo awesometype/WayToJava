@@ -1,6 +1,7 @@
 package com.mudy.file;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 
 /**
@@ -8,9 +9,10 @@ import java.util.Date;
  *
  */
 public class FileDemo2 {
-    public static void main(String[] args) {
-        test2();
+    public static void main(String[] args) throws IOException{
+        test3();
     }
+
     /**操作File路径和名称
      * File f.getAbsoluteFile() 获取绝对路径
      * String f.getAbsolutePath() 获取绝对路径
@@ -19,7 +21,6 @@ public class FileDemo2 {
      * File f.getParentFile() 获取上级目录文件
      * String f.getParent() 获取上级目录路径
      */
-
     private static void test1() {
         File f = new File("/Users/mudy/IntelliJIDEAProjects/WayToJava/Day19/src/com/mudy/file/mudy.txt");
         File absoluteFile =  f.getAbsoluteFile();
@@ -45,7 +46,6 @@ public class FileDemo2 {
          */
     }
 
-
     /** 检测File状态的方法
      * boolean f.canExecute(); 是否是可执行文件
      * boolean canRead()是否可读
@@ -61,4 +61,33 @@ public class FileDemo2 {
         System.out.println(new Date(f.lastModified()).toString());
         System.out.println(new Date(f.lastModified()).toLocaleString());
     }
+
+    /** 文件操作
+     * f.isFile() 是否是文件
+     * f.createNewFile() 创建新的文件
+     * File.createTempFile() 创建临时文件 临时使用的文件，随时都可以被清除掉
+     * f.deleteOnExit(); 在JVM停止时删除文件
+     * f.exists() 判断文件是否存在
+     * f.renameTo() 重新修改文件名称
+     */
+    private static void test3() throws IOException{
+        File f = new File("/Users/mudy/IntelliJIDEAProjects/WayToJava/Day19/src/com/mudy/file/mudy.txt");
+        System.out.println(f.isFile());
+//        f.createNewFile()
+//        File.createTempFile()
+//        f.deleteOnExit();
+//        f.exists()
+        File f1 = new File("/Users/mudy/IntelliJIDEAProjects/WayToJava/Day19/src/com/mudy/file/mudy1.txt");
+        f.renameTo(f1);
+
+        //创建一个文件
+        File f2 = new File("/Users/mudy/IntelliJIDEAProjects/WayToJava/Day19/src/com/mudy/file/mudy2.txt");
+        f2.createNewFile();
+
+//        File dir = new File("");
+//        File f3 = new File(dir,"");
+
+        //创建临时文件
+    }
+
 }
