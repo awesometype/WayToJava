@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class FileDemo2 {
     public static void main(String[] args) throws IOException{
-        test3();
+        test4();
     }
 
     /**操作File路径和名称
@@ -88,6 +88,30 @@ public class FileDemo2 {
 //        File f3 = new File(dir,"");
 
         //创建临时文件
+    }
+
+    /**目录操作
+     * boolean isDirectory() 判断是否是目录
+     * boolean mkdir() 创建当前目录
+     * boolean mkdirs() 创建当前目录和上级目录
+     * String[] list() 列出所有的文件名
+     * File[] listFiles() 列出所有的文件对象
+     * static File[] listRoots() 列出系统盘符
+     *
+     */
+    private static void test4() {
+        File dir = new File("/Users/mudy/IntelliJIDEAProjects/WayToJava");
+        File f1 = new File(dir,"mudy3.txt");
+        System.out.println(dir.isDirectory());
+        System.out.println(f1.isDirectory());
+
+        for (String name:dir.list()) {
+            System.out.println(name);
+        }
+
+//        System.out.println(dir.listFiles());//列出所有的文件对象
+//        System.out.println(dir.list());//列出所有的文件名
+//        System.out.println(File.listRoots());//列出系统盘符
     }
 
 }
