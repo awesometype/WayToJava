@@ -9,7 +9,7 @@ import java.util.Date;
 public class ClassInstanceDemo {
     //需求，获取java.util.Date类的字节码对象
     public static void main(String[] args) throws Exception{
-        //方式一：使用class属性 类名.class; 用的比较少 
+        //方式一：使用class属性 类名.class; 用的比较少
         Class<java.util.Date> clazz = java.util.Date.class;
 
         //方式二：通过对象的getClass()来获取 用的也比较多

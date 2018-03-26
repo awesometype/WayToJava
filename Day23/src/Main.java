@@ -100,6 +100,16 @@ public class Main {
  * 此时的class对象就表示java.util.Date的字节码
  * Class类可以表示N个类的字节码对象。
  * Class提供了泛型，来区分Class类此时表示的那一个类的字节码 Class<T>
+ */
+
+
+/** 基本数据类型不能表示为对象，也就不能使用getClass的方式，基本类型没有类名的概念
+ * 也不能使用Class.forName的方式，如何表示基本类型的字节码对象呢？
+ * 所有的数据类型都有class属性
+ * Clss clz = 数据类型.class;
+ * 九大内置Class实例:指的是JVM中预先提供好的class实例分别是byte short int long double float boolean char void
+ * int.class .... void.class
+ *
  *
  *
  *
