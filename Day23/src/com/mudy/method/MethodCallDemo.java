@@ -27,17 +27,22 @@ public class MethodCallDemo {
     public static void main(String[] args) throws Exception{
         //1
         Class claz = Person.class;
-//        //2
-//        Method mt =  claz.getMethod("doWork",String.class);
-////        //3 使用反射调用方法
-//        mt.invoke(claz.newInstance(),"mudya");
+        //2
+        Method mt =  claz.getMethod("doWork",String.class);
+//        //3 使用反射调用方法
+        mt.invoke(null,"mudya"); //调用静态方法的时候，将第一个参数设置为null就行 ，静态方法根本就不需要对象，所以传啥都行
 
 
-        Method mt = claz.getDeclaredMethod("doWork",String.class,int.class);
-        mt.setAccessible(true);
-        Object res = mt.invoke(claz.newInstance(),"mudy",12);//mudy
-        System.out.println(res);
-
+//        Method mt = claz.getDeclaredMethod("doWork",String.class,int.class);
+//        mt.setAccessible(true);
+//        Object res = mt.invoke(claz.newInstance(),"mudy",12);//mudy
+//        System.out.println(res);
+//
+//
+//        Object obj = new java.util.Date();
+//        Method method = obj.getClass().getMethod("toLocaleString");
+//        Object localStr = method.invoke(obj);
+//        System.out.println(localStr);
     }
 }
 
