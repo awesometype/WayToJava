@@ -1,0 +1,7 @@
+<beans>
+    <!--每一个<bean>元素表示了一个类的信息 name属性：该当前<bean>元素一个唯一的表示,也可以作为表示类的对象
+    class属性:表示一个类的全限定名称
+    -->
+    <bean id="user" class="com.mudy.constructor.User" method="doWork"/>
+    <bean id="date" class="java.util.Date"/>
+</beans>
